@@ -306,7 +306,7 @@ body {
          background-color: #fff;
          border-color: #80a1d1;
          outline: 0;
-         box-shadow: 0 0 0 0.25rem #0042a240;
+         box-shadow: 0 0 0 0.25rem $redColor;
       }
    }
    .custom__checkbox {
@@ -353,11 +353,11 @@ body {
          transform: rotate(45deg);
       }
       input:checked + label::before {
-         background: #003582;
+         background: $redColor;
       }
    }
    a {
-      color: #0042a2;
+      color: $redColor;
       text-decoration: underline;
    }
    .btn {
@@ -374,8 +374,8 @@ body {
       vertical-align: middle;
       user-select: none;
       color: #fff;
-      background-color: #0042a2;
-      border-color: #0042a2;
+      background-color: $redColor;
+      border-color: $redColor;
       border: 0.125rem solid transparent;
       border-radius: 0.5rem;
       transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -383,14 +383,14 @@ body {
       font-family: "Tajawal";
       &:hover {
          color: #fff;
-         background-color: #00388a;
-         border-color: #003582;
+         background-color: darken($redColor, 15);
+         border-color: darken($redColor, 15);
       }
       &:focus {
          color: #fff;
-         background-color: #00388a;
-         border-color: #003582;
-         box-shadow: 0 0 0 0.25rem #265eb080;
+         background-color: darken($redColor, 15);
+         border-color: darken($redColor, 15);
+         box-shadow: 0 0 0 0.25rem darken($redColor, 15);
       }
    }
 }
