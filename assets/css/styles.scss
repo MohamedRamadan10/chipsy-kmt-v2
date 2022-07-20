@@ -246,7 +246,7 @@ body {
    @media (max-width: 991px) {
       flex-direction: column;
    }
-   .heading {
+   .heading__form {
       margin-bottom: 50px;
       h1 {
          font-size: 1.7rem;
@@ -473,7 +473,8 @@ body {
       left: initial;
    }
    @media (max-width: 767px) {
-      bottom: 24%;
+      bottom: auto;
+      top: 49%;
       width: 95%;
    }
 }
