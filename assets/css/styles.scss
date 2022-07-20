@@ -176,6 +176,7 @@ body {
    transform: translate(-62%, 0);
    text-align: center;
    display: inline-block;
+   opacity: 0;
    @media (max-width: 991px) {
       top: 96%;
       left: 50%;
@@ -474,5 +475,21 @@ body {
    @media (max-width: 767px) {
       bottom: 27%;
       width: 95%;
+   }
+}
+.heading {
+   position: absolute;
+   top: 30%;
+   right: 6%;
+   font-size: 4rem;
+   color: #fff;
+   text-shadow: 4px 2px 0 #ee1c25;
+   @media (max-width: 991px) {
+      right: inherit;
+      width: 100%;
+      text-align: center;
+   }
+   @media (max-width: 767px) {
+      font-size: 3rem;
    }
 }

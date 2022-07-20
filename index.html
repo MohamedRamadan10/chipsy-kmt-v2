@@ -97,31 +97,32 @@
       />
       <link rel="stylesheet" href="assets/css/styles.min.css" />
       <script>
-      var secondsOne = 5;
-      var fooOne;
+         var secondsOne = 5;
+         var fooOne;
 
-      function redirectOne() {
-         document.location.href = "https://mohamedramadan10.github.io/chipsy-kmt-v2/check.html";
-      }
-
-      function updateSecsOne() {
-         document.getElementById("secondsOne").innerHTML = secondsOne;
-         secondsOne--;
-         if (secondsOne == -1) {
-            clearInterval(fooOne);
-            document.getElementById("secondsOne").innerHTML = "التالي";
-            redirectOne();
+         function redirectOne() {
+            document.location.href =
+               "https://mohamedramadan10.github.io/chipsy-kmt-v2/check.html";
          }
-      }
 
-      function countdownTimer() {
-         fooOne = setInterval(function () {
-            updateSecsOne();
-         }, 1000);
-      }
+         function updateSecsOne() {
+            document.getElementById("secondsOne").innerHTML = secondsOne;
+            secondsOne--;
+            if (secondsOne == -1) {
+               clearInterval(fooOne);
+               document.getElementById("secondsOne").innerHTML = "التالي";
+               redirectOne();
+            }
+         }
 
-      countdownTimer();
-   </script>
+         function countdownTimer() {
+            fooOne = setInterval(function () {
+               updateSecsOne();
+            }, 1000);
+         }
+
+         countdownTimer();
+      </script>
    </head>
 
    <body>
@@ -130,6 +131,9 @@
             <img src="assets/images/1400X900.jpg" class="lg" alt="" />
             <img src="assets/images/2560X1440.jpg" class="md" alt="" />
             <img src="assets/images/2560X1440.jpg" class="sm" alt="" />
+         </div>
+         <div class="heading">
+            <h1>استمتع بالإنترنت مجانا</h1>
          </div>
          <div class="timer">
             <span class="time" id="secondsOne">5</span>
